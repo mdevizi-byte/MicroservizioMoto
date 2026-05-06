@@ -1,0 +1,38 @@
+  ngrok http 8082  ngrok http 8082  ngrok http 8082target/
+.vscode/
+.idea/
+*.iml
+*.log
+mvnw.cmd
+mvnw  # dalla root del progetto
+  .\mvnw.cmd -DskipTests package
+
+  # build Docker image (sostituisci <tag> con es. tuo-utente/microserviziomoto:latest)
+  docker build -t <dockerhub-user>/microserviziomoto:latest .  # dalla root del progetto
+  .\mvnw.cmd -DskipTests package
+
+  # build Docker image (sostituisci <tag> con es. tuo-utente/microserviziomoto:latest)
+  docker build -t <dockerhub-user>/microserviziomoto:latest .  # dalla root del progetto
+  .\mvnw.cmd -DskipTests package
+
+  # build Docker image (sostituisci <tag> con es. tuo-utente/microserviziomoto:latest)
+  docker build -t <dockerhub-user>/microserviziomoto:latest .  # dalla root del progetto
+  .\mvnw.cmd -DskipTests package
+
+  # build Docker image (sostituisci <tag> con es. tuo-utente/microserviziomoto:latest)
+  docker build -t <dockerhub-user>/microserviziomoto:latest .  # dalla root del progetto
+  .\mvnw.cmd -DskipTests package
+
+  # build Docker image (sostituisci <tag> con es. tuo-utente/microserviziomoto:latest)
+  docker build -t <dockerhub-user>/microserviziomoto:latest .  # dalla root del progetto
+  .\mvnw.cmd -DskipTests package
+
+  # build Docker image (sostituisci <tag> con es. tuo-utente/microserviziomoto:latest)
+  docker build -t <dockerhub-user>/microserviziomoto:latest .  # dalla root del progetto
+  .\mvnw.cmd -DskipTests package
+
+  # build Docker image (sostituisci <tag> con es. tuo-utente/microserviziomoto:latest)
+  docker build -t <dockerhub-user>/microserviziomoto:latest .
+/.mvn
+.git
+
