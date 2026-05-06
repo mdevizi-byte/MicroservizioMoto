@@ -1,4 +1,4 @@
-package com.corso.MicroservizioMoto;
+ssh -T git@github.compackage com.corso.MicroservizioMoto;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
