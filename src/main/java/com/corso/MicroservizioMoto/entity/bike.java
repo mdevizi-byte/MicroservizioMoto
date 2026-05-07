@@ -1,28 +1,26 @@
 package com.corso.MicroservizioMoto.entity;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "bike", schema = "moto")
+@Table(name = "bike")
 public class Bike {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    // mappa la colonna `name` nel DB
     @Column(name = "name", nullable = false)
     private String name;
 
-    // mappa la colonna `price` nel DB
     @Column(name = "price", nullable = false)
     private BigDecimal price;
 
-    // mappa la colonna `created_at` nel DB
     @Column(name = "created_at", updatable = false)
     private LocalDateTime createdAt;
+
 
     public Bike() {
     }

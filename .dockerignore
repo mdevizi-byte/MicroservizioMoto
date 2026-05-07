@@ -33,6 +33,6 @@ mvnw  # dalla root del progetto
 
   # build Docker image (sostituisci <tag> con es. tuo-utente/microserviziomoto:latest)
   docker build -t <dockerhub-user>/microserviziomoto:latest .
-/.mvn
+
 .git
 
