@@ -28,7 +28,7 @@ MicroservizioMoto/
 │   │   │   ├── MicroservizioMotoApplication.java    (Classe principale)
 │   │   │   ├── controller/                           (Controller REST)
 │   │   │   ├── entity/
-│   │   │   │   └── bike.java                        (Entità Bike)
+│   │   │   │   └── Bike.java                        (Entità Bike)
 │   │   │   ├── repo/                                (Repository)
 │   │   │   └── services/                            (Servizi)
 │   │   └── resources/
@@ -48,7 +48,7 @@ MicroservizioMoto/
 
 ### Prerequisites
 
-- Java 8 o superiore
+- Java 17 o superiore
 - Maven 3.6+
 - Docker e Docker Compose (opzionale, per containerizzazione)
 
@@ -70,7 +70,7 @@ cd MicroservizioMoto
 ./mvnw spring-boot:run
 ```
 
-L'applicazione sarà disponibile su `http://localhost:8080`
+L'applicazione sarà disponibile su `http://localhost:8083`
 
 ### Docker
 
