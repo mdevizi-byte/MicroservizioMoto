@@ -2,8 +2,7 @@
 # Build stage: use Maven to build the fat jar
 FROM maven:3.9.4-eclipse-temurin-17 AS build
 WORKDIR /workspace/app
-COPY pom.xml mvnw .
-COPY .mvn .mvn
+COPY pom.xml .
 COPY src src
 RUN --mount=type=cache,target=/root/.m2 mvn -B -e -DskipTests package
 

@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/bikes")
-public class BikeController {
+public class bikeController {
 
 
 
@@ -49,10 +49,10 @@ public class BikeController {
     public ResponseEntity<Bike> updateBike(@PathVariable Long id, @RequestBody Bike bikeDetails) {
         return bikeRepository.findById(id)
                 .map(bike -> {
-                    bike.setName(bikeDetails.getName());
-                    bike.setPrice(bikeDetails.getPrice());
+                    ike.setName(bikeDetails.getName());
+                    ike.setPrice(bikeDetails.getPrice());
                     // Il createdAt NON viene aggiornato (updatable = false)
-                    Bike updatedBike = bikeRepository.save(bike);
+                    Bike updatedBike = bikeRepository.save(ike);
                     return ResponseEntity.ok(updatedBike);
                 })
                 .orElseGet(() -> ResponseEntity.notFound().build());

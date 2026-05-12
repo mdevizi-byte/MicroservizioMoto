@@ -5,7 +5,6 @@
   *.iml
   *.log
   node_modules/
-  Dockerfile*
   test_api.bat
   test_api.ps1
 
