@@ -49,10 +49,10 @@ public class bikeController {
     public ResponseEntity<Bike> updateBike(@PathVariable Long id, @RequestBody Bike bikeDetails) {
         return bikeRepository.findById(id)
                 .map(bike -> {
-                    ike.setName(bikeDetails.getName());
-                    ike.setPrice(bikeDetails.getPrice());
+                    bike.setName(bikeDetails.getName());
+                    bike.setPrice(bikeDetails.getPrice());
                     // Il createdAt NON viene aggiornato (updatable = false)
-                    Bike updatedBike = bikeRepository.save(ike);
+                    Bike updatedBike = bikeRepository.save(bike);
                     return ResponseEntity.ok(updatedBike);
                 })
                 .orElseGet(() -> ResponseEntity.notFound().build());
